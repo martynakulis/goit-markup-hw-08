@@ -1,0 +1,23 @@
+.contact-bottom {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $footerTextColor;
+  padding-top: 20px;
+  &__link {
+    display: inline-block;
+    color: $footerIcon;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $activeColor;
+    }
+    &--mail {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+  }
+}

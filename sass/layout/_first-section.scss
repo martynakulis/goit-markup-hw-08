@@ -1,0 +1,109 @@
+.main-content {
+  margin: 0 auto;
+  display: block;
+}
+.content {
+  &__icon {
+    width: 450px;
+    height: 120px;
+    background-color: $mainIconBgc;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  &__svg--antenna {
+    width: 65.32px;
+    height: 70px;
+    margin: 25px 192.34px;
+  }
+  &__svg--clock {
+    width: 66.96px;
+    height: 70px;
+    margin: 25px 191.54px;
+  }
+  &__svg--diagram {
+    width: 70px;
+    height: 53.69px;
+    margin: 33.2px 190px;
+  }
+  &__svg--astronaut {
+    width: 70px;
+    height: 70px;
+    margin: 25px 190px;
+  }
+  &__heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__text {
+    color: $paragraphColor;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .content {
+    flex-basis: calc((100% - 30px) / 2);
+    &__icon {
+      width: 354px;
+      margin-top: 0;
+    }
+    &__svg--antenna {
+      margin: 25px 144.34px;
+    }
+    &__svg--clock {
+      margin: 25px 143.54px;
+    }
+    &__svg--diagram {
+      margin: 33.2px 142px;
+    }
+    &__svg--astronaut {
+      margin: 25px 142px;
+    }
+    &__heading {
+      text-align: left;
+    }
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .main-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .content {
+    flex-basis: calc((100% - 90px) / 4);
+    &__icon {
+      width: 270px;
+      margin-top: 0;
+    }
+    &__svg--antenna {
+      margin: 25px 102.34px;
+    }
+    &__svg--clock {
+      margin: 25px 101.54px;
+    }
+    &__svg--diagram {
+      margin: 33.2px 100px 33.11px 100px;
+    }
+    &__svg--astronaut {
+      margin: 25px 100px;
+    }
+    &__heading {
+      text-align: left;
+    }
+  }
+}

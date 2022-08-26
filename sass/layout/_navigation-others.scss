@@ -1,0 +1,27 @@
+.navigation__link,
+.contact__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.main-page::after {
+  content: '';
+  position: absolute;
+  width: 53px;
+  height: 4px;
+  border-radius: $pageUnderlineRadius;
+  background-color: $activeColor;
+  top: 48.6px;
+  left: 0;
+}
+.portfolio-page::after {
+  content: '';
+  position: absolute;
+  width: 58px;
+  height: 4px;
+  border-radius: $pageUnderlineRadius;
+  background-color: $activeColor;
+  top: 48.6px;
+  left: 0;
+}

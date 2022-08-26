@@ -1,0 +1,16 @@
+.section {
+  padding-top: 60px;
+  &:nth-child(2),
+  &:last-child {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .section {
+    padding-top: 94px;
+    &:nth-child(2),
+    &:last-child {
+      padding-bottom: 94px;
+    }
+  }
+}

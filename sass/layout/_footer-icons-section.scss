@@ -1,0 +1,47 @@
+.footer-icons {
+  padding-top: 12px;
+  margin-left: 70px;
+  &__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $footerHeaderColor;
+  }
+  &__grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 20px;
+    width: 206px;
+  }
+}
+
+.icons-grid {
+  &__item {
+    flex-basis: calc((100% - 30px) / 4);
+  }
+  &__icon-box {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $footerIconBoxColor;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: $activeColor;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: $footerIconColor;
+  }
+}

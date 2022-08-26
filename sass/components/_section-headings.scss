@@ -1,0 +1,21 @@
+.headings {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  &--what-we-do {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .headings {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    &--what-we-do {
+      display: block;
+    }
+  }
+}

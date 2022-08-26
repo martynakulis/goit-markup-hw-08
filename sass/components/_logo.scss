@@ -1,0 +1,16 @@
+.logo {
+  font-family: $logoFont;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+  color: $logoColor;
+  &__web-color {
+    color: $logoMainColor;
+  }
+}
+.web-heading__logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
+  color: $logoHeadingColor;
+}

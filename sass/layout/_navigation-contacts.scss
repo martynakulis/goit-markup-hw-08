@@ -1,0 +1,47 @@
+.contact {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 345px;
+  &__item {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+    &:hover,
+    &:focus {
+      .contact__icon {
+        fill: $activeColor;
+      }
+    }
+  }
+  &__link {
+    color: $contactColor;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $activeColor;
+    }
+  }
+  &__icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: $contactColor;
+  }
+  &__icon--envelope {
+    width: 16px;
+    height: 12px;
+  }
+  &__icon--smartphone {
+    width: 10px;
+    height: 16px;
+  }
+}

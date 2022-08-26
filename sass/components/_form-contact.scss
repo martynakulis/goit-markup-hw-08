@@ -1,0 +1,50 @@
+.form-object {
+  margin-bottom: 10px;
+  position: relative;
+  &__text {
+    display: block;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $contactColor;
+    margin-left: 40px;
+  }
+  &__box {
+    display: block;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin: 4px 40px 10px 40px;
+    padding: 12px 0 12px 42px;
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus-within {
+      outline: 1px solid $activeColor;
+    }
+  }
+  &__icon {
+    position: absolute;
+    display: block;
+    fill: $mainColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    bottom: 14px;
+    left: 55px;
+    z-index: 1000;
+    &--person {
+      width: 12px;
+      height: 12px;
+    }
+    &--phone {
+      width: 13px;
+      height: 13px;
+    }
+    &--email {
+      width: 15px;
+      height: 12px;
+    }
+  }
+}
+
+.form-object__box:focus-within + .form-object__icon {
+  fill: $activeColor;
+}

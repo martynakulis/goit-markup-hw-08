@@ -1,0 +1,25 @@
+.navigation {
+  display: flex;
+  margin-left: 93px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  &__item {
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 46px;
+    }
+  }
+  &__link {
+    color: $mainColor;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $activeColor;
+    }
+    &:visited {
+      color: none;
+    }
+  }
+}
