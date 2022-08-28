@@ -1,6 +1,5 @@
 .footer-icons {
-  padding-top: 12px;
-  margin-left: 70px;
+  padding-top: 60px;
   &__header {
     font-weight: 700;
     font-size: 14px;
@@ -8,6 +7,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $footerHeaderColor;
+    text-align: center;
   }
   &__grid {
     display: flex;
@@ -15,6 +15,7 @@
     gap: 10px;
     padding-top: 20px;
     width: 206px;
+    margin: 0 auto;
   }
 }
 
@@ -43,5 +44,24 @@
     width: 20px;
     height: 20px;
     fill: $footerIconColor;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-icons {
+    position: absolute;
+    right: 74px;
+    padding-top: 5px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .footer-icons {
+    padding-top: 12px;
+    margin-left: 70px;
+    &__header {
+      text-align: left;
+    }
+    &__grid {
+      margin: 0;
+    }
   }
 }

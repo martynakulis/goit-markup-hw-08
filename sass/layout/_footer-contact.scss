@@ -5,8 +5,10 @@
   letter-spacing: 0.03em;
   color: $footerTextColor;
   padding-top: 20px;
+  text-align: center;
   &__link {
     display: inline-block;
+    text-align: center;
     color: $footerIcon;
     transition-property: color;
     transition-duration: 250ms;
@@ -16,8 +18,29 @@
       color: $activeColor;
     }
     &--mail {
-      padding-top: 9px;
-      padding-bottom: 9px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contact-bottom {
+    position: absolute;
+    left: 61px;
+    top: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .contact-bottom {
+    text-align: left;
+    &__link {
+      text-align: left;
+
+      &--mail {
+        padding-top: 9px;
+        padding-bottom: 9px;
+      }
     }
   }
 }

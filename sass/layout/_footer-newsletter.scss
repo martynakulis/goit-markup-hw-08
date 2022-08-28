@@ -1,6 +1,6 @@
 .newsletter {
-  padding-top: 12px;
-  padding-left: 78px;
+  padding-top: 60px;
+
   &__title {
     font-weight: 700;
     font-size: 14px;
@@ -8,14 +8,15 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $footerHeaderColor;
+    text-align: center;
   }
   &__email {
     background-color: transparent;
-    width: 358px;
+    width: 450px;
     height: 50px;
+    margin: 20px auto;
     padding-left: 16px;
-    margin-top: 20px;
-    margin-right: 12px;
+
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -31,6 +32,8 @@
   }
   &__button {
     position: relative;
+    margin: 0 auto;
+    display: block;
   }
   &__icon {
     fill: $footerIconColor;
@@ -46,4 +49,32 @@
 .button__text--newsletter {
   margin-right: 42px;
   margin-left: 24px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .newsletter {
+    padding-top: 0px;
+    position: absolute;
+    top: 247px;
+    left: 166px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .newsletter {
+    padding-top: 12px;
+    padding-left: 78px;
+    &__title {
+      text-align: left;
+    }
+    &__email {
+      width: 358px;
+
+      margin-top: 20px;
+      margin-right: 12px;
+      margin-left: 0;
+    }
+    &__button {
+      margin: 0;
+      display: inline-block;
+    }
+  }
 }
