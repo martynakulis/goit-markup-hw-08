@@ -1,4 +1,10 @@
 .form__button {
   padding: 10px 76px;
-  margin: 30px 164px 40px 164px;
+  margin: 30px 125px 40px 125px;
+}
+@media screen and (min-width: 1200px) {
+  .form__button {
+    padding: 10px 76px;
+    margin: 30px 164px 40px 164px;
+  }
 }

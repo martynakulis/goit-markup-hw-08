@@ -2,21 +2,52 @@
   background-color: $headingBgcColor;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('/images/backgroung-image.jpg');
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin: 0 auto;
   &__title {
     color: $headingTitleColor;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    padding-top: 200px;
+    padding-top: 118px;
     padding-bottom: 30px;
   }
   &__button {
-    margin: 0 700px;
+    margin: 0 140px;
     padding: 10px 41px 10px 41px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .heading {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/backgroung-image.jpg');
+    max-width: 768px;
+    height: 400px;
+
+    &__button {
+      margin: 0 284px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heading {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/backgroung-image.jpg');
+    max-width: 1600px;
+    height: 600px;
+
+    &__title {
+      font-size: 44px;
+      line-height: 1.36;
+
+      padding-top: 200px;
+    }
+    &__button {
+      margin: 0 auto;
+      display: block;
+    }
   }
 }

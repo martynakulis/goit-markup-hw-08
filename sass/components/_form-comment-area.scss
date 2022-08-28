@@ -1,6 +1,6 @@
 .form-object__comment-area {
   display: block;
-  width: 448px;
+  width: 370px;
   height: 120px;
   margin-left: 40px;
   margin-top: 4px;
@@ -11,12 +11,21 @@
   margin-bottom: 20px;
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &::placeholder {
-    font-size: 12px;
-    line-height: 1.16;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
   &:focus-within {
     outline: 1px solid $activeColor;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-object__comment-area {
+    width: 448px;
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.16;
+    }
   }
 }

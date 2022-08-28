@@ -375,25 +375,51 @@ img {
 .heading {
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/backgroung-image.jpg");
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin: 0 auto;
 }
 .heading__title {
   color: #fff;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-top: 200px;
+  padding-top: 118px;
   padding-bottom: 30px;
 }
 .heading__button {
-  margin: 0 700px;
+  margin: 0 140px;
   padding: 10px 41px 10px 41px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .heading {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/backgroung-image.jpg");
+    max-width: 768px;
+    height: 400px;
+  }
+  .heading__button {
+    margin: 0 284px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heading {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/backgroung-image.jpg");
+    max-width: 1600px;
+    height: 600px;
+  }
+  .heading__title {
+    font-size: 44px;
+    line-height: 1.36;
+    padding-top: 200px;
+  }
+  .heading__button {
+    margin: 0 auto;
+    display: block;
+  }
+}
 .backdrop {
   position: fixed;
   left: 0;
@@ -409,8 +435,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -428,6 +454,12 @@ img {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1200px) {
+  .backdrop__modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 .is-hidden {
   transform: scale(0);
   opacity: 0;
@@ -439,12 +471,17 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.17;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 12px;
 }
 
+@media screen and (min-width: 1200px) {
+  .form__title {
+    line-height: 1.17;
+  }
+}
 .form-object {
   margin-bottom: 10px;
   position: relative;
@@ -459,7 +496,7 @@ img {
 }
 .form-object__box {
   display: block;
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -496,9 +533,14 @@ img {
   fill: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .form-object__box {
+    width: 448px;
+  }
+}
 .form-object__comment-area {
   display: block;
-  width: 448px;
+  width: 370px;
   height: 120px;
   margin-left: 40px;
   margin-top: 4px;
@@ -510,8 +552,8 @@ img {
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-object__comment-area::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -519,9 +561,18 @@ img {
   outline: 1px solid #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .form-object__comment-area {
+    width: 448px;
+  }
+  .form-object__comment-area::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
 .form-item {
   position: relative;
-  margin-left: 52px;
+  margin-left: 40px;
   display: flex;
   align-items: center;
 }
@@ -532,7 +583,7 @@ img {
   height: 16px;
   outline: 1px solid #000000;
   border-radius: 2px;
-  margin-right: 7px;
+  margin-right: 8px;
   z-index: -1;
 }
 .form-item__policy {
@@ -549,23 +600,42 @@ img {
 }
 
 .acceptation-text__item {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
 }
 .acceptation-text__link {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .form-item {
+    margin-left: 55px;
+  }
+  .acceptation-text__item {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .acceptation-text__link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 .form__button {
   padding: 10px 76px;
-  margin: 30px 164px 40px 164px;
+  margin: 30px 125px 40px 125px;
 }
 
+@media screen and (min-width: 1200px) {
+  .form__button {
+    padding: 10px 76px;
+    margin: 30px 164px 40px 164px;
+  }
+}
 .section {
   padding-top: 60px;
 }

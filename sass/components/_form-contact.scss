@@ -11,7 +11,7 @@
   }
   &__box {
     display: block;
-    width: 448px;
+    width: 370px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -47,4 +47,12 @@
 
 .form-object__box:focus-within + .form-object__icon {
   fill: $activeColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-object {
+    &__box {
+      width: 448px;
+    }
+  }
 }
