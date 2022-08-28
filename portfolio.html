@@ -16,24 +16,15 @@
     />
   </head>
   <body>
-    <!--
-    <header class="web-heading">
+     <header class="web-heading">
       <div class="web-heading__line">
         <div class="container">
-          <a href="/" class="web-heading__logo logo link"
-            ><span class="logo__web-color">Web</span>Studio</a
-          >
+          <a href="/" class="web-heading__logo logo link"><span class="logo__web-color">Web</span>Studio</a>
           <nav>
             <ul class="navigation style">
-              <li class="navigation__item">
-                <a href="index.html" class="navigation__link link">Agencja</a>
-              </li>
-              <li class="navigation__item">
-                <a href="portfolio.html" class="navigation__link link portfolio-page">Portfolio</a>
-              </li>
-              <li class="navigation__item">
-                <a href="/" class="navigation__link link">Kontakt</a>
-              </li>
+              <li class="navigation__item"><a href="index.html" class="navigation__link link">Agencja</a></li>
+              <li class="navigation__item"><a href="portfolio.html" class="navigation__link link portfolio-page">Portfolio</a></li>
+              <li class="navigation__item"><a href="/" class="navigation__link link">Kontakt</a></li>
             </ul>
           </nav>
           <ul class="contact style">
@@ -58,10 +49,46 @@
               </a>
             </li>
           </ul>
+          <button type="button" class="js-open-menu mobile-open-button"><svg class="mobile-open-button__icon"><use href="/mobile-icons.svg#icon-menu_24px"></use></svg></button>
         </div>
       </div>
+      <!--
+        MENU MOBILE
+      -->
+      <div class="js-menu-container">
+          <button type="button" class="js-close-menu mobile-close-button"><svg class="mobile-close-button__icon"><use href="/mobile-icons.svg#icon-close_24px"></svg></button>
+          <nav>
+            <ul class="mobile-navigation style">
+              <li class="mobile-navigation__item "><a href="index.html" class="mobile-navigation__link link">Agencja</a></li>
+              <li class="mobile-navigation__item "><a href="portfolio.html" class="mobile-navigation__link mobile-navigation__link--second link">Portfolio</a></li>
+              <li class="mobile-navigation__item "><a href="/" class="mobile-navigation__link link">Kontakt</a></li>
+            </ul>
+          </nav>
+          <ul class="mobile-contact style">
+            <li class="mobile-contact__item">
+              <a href="/" class="mobile-contact__link mobile-contact__link--phone link">
+                
+                  info@devstudio.com
+               
+              </a>
+            </li>
+            <li class="mobile-contact__item">
+              <a href="/" class="mobile-contact__link mobile-contact__link--mail link">
+                
+                  +48 111 111 111
+                
+              </a>
+            </li>
+          </ul>
+          <ul class="style mobile-socials">
+            <li><a href="/" class="link mobile-socials__link">Instagram</a></li>
+            <li><a href="/" class="link mobile-socials__link"></a>Twitter</li>
+            <li><a href="/" class="link mobile-socials__link"></a>Facebook</li>
+            <li><a href="/" class="link mobile-socials__link"></a>LinkedIn</li>
+          </ul>
+          </div>
     </header>
-  -->
+ 
     <main>
       <div class="container">
         <ul class="style filters">
@@ -82,7 +109,6 @@
           </li>
         </ul>
       </div>
-      <!--
       <div class="container">
         <ul class="style filter-content">
           <li class="filter-content__item">
@@ -290,7 +316,9 @@
     <footer class="contacts">
       <div class="container footer-box">
         <section>
-          <a href="/" class="logo link"><span class="logo__web-color">Web</span>Studio</a>
+          <a href="/" class="logo footer-box__logo link"
+            ><span class="logo__web-color">Web</span>Studio</a
+          >
           <address class="contact-bottom">
             m. Warszawa, Aleje Jerozolimskie 21 <br />
             <a

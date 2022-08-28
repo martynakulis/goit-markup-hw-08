@@ -5,23 +5,52 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.main-page::after {
-  content: '';
-  position: absolute;
-  width: 53px;
-  height: 4px;
-  border-radius: $pageUnderlineRadius;
-  background-color: $activeColor;
-  top: 48.6px;
-  left: 0;
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contact__link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  .main-page::after {
+    content: '';
+    position: absolute;
+    width: 53px;
+    height: 4px;
+    border-radius: $pageUnderlineRadius;
+    background-color: $activeColor;
+    top: 48.6px;
+    left: 0;
+  }
+  .portfolio-page::after {
+    content: '';
+    position: absolute;
+    width: 58px;
+    height: 4px;
+    border-radius: $pageUnderlineRadius;
+    background-color: $activeColor;
+    top: 48.6px;
+    left: 0;
+  }
 }
-.portfolio-page::after {
-  content: '';
-  position: absolute;
-  width: 58px;
-  height: 4px;
-  border-radius: $pageUnderlineRadius;
-  background-color: $activeColor;
-  top: 48.6px;
-  left: 0;
+@media screen and (min-width: 1200px) {
+  .main-page::after {
+    content: '';
+    position: absolute;
+    width: 53px;
+    height: 4px;
+    border-radius: $pageUnderlineRadius;
+    background-color: $activeColor;
+    top: 48.6px;
+    left: 0;
+  }
+  .portfolio-page::after {
+    content: '';
+    position: absolute;
+    width: 58px;
+    height: 4px;
+    border-radius: $pageUnderlineRadius;
+    background-color: $activeColor;
+    top: 48.6px;
+    left: 0;
+  }
 }

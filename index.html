@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <!--<header class="web-heading">
+    <header class="web-heading">
       <div class="web-heading__line">
         <div class="container">
           <a href="/" class="web-heading__logo logo link"><span class="logo__web-color">Web</span>Studio</a>
@@ -50,8 +50,45 @@
               </a>
             </li>
           </ul>
+          <button type="button" class="js-open-menu mobile-open-button"><svg class="mobile-open-button__icon"><use href="/mobile-icons.svg#icon-menu_24px"></use></svg></button>
         </div>
       </div>
+      <!--
+        MENU MOBILE
+      -->
+      <div class="js-menu-container">
+          <button type="button" class="js-close-menu mobile-close-button"><svg class="mobile-close-button__icon"><use href="/mobile-icons.svg#icon-close_24px"></svg></button>
+          <nav>
+            <ul class="mobile-navigation style">
+              <li class="mobile-navigation__item "><a href="index.html" class="mobile-navigation__link link main-page">Agencja</a></li>
+              <li class="mobile-navigation__item "><a href="portfolio.html" class="mobile-navigation__link mobile-navigation__link--second link">Portfolio</a></li>
+              <li class="mobile-navigation__item "><a href="/" class="mobile-navigation__link link">Kontakt</a></li>
+            </ul>
+          </nav>
+          <ul class="mobile-contact style">
+            <li class="mobile-contact__item">
+              <a href="/" class="mobile-contact__link mobile-contact__link--phone link">
+                
+                  info@devstudio.com
+               
+              </a>
+            </li>
+            <li class="mobile-contact__item">
+              <a href="/" class="mobile-contact__link mobile-contact__link--mail link">
+                
+                  +48 111 111 111
+                
+              </a>
+            </li>
+          </ul>
+          <ul class="style mobile-socials">
+            <li><a href="/" class="link mobile-socials__link">Instagram</a></li>
+            <li><a href="/" class="link mobile-socials__link"></a>Twitter</li>
+            <li><a href="/" class="link mobile-socials__link"></a>Facebook</li>
+            <li><a href="/" class="link mobile-socials__link"></a>LinkedIn</li>
+          </ul>
+          </div>
+      <!--
         <ul class="heading style">
           <li>
             <h1 class="heading__title">efektywne rozwiązania </br> dla naszego biznesu</h1>
@@ -110,9 +147,9 @@
             </div>
           </li>
         </ul>  
+      -->
     </header> 
-  -->
-    <main>
+      <main>
       <section class="section">
         <div class="container">
           <ul class="style main-content">
@@ -546,6 +583,7 @@
         </section>
       </div>
     </footer>
+    <script src="mobile-menu.js"></script>
     <script src="modal.js"></script>
   </body>
 </html>

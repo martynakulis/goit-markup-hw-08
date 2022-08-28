@@ -1,14 +1,15 @@
 .filter-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   gap: 30px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
   &__item {
-    flex-basis: calc((100% - 2 * 30px) / 3);
+    flex-basis: calc((100% - 8 * 30px) / 9);
   }
 }
 .portfolio {
-  width: 370px;
+  width: 450px;
   position: relative;
   overflow: hidden;
   transition-property: box-shadow;
@@ -19,12 +20,12 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   &__image {
-    width: 370px;
+    width: 450px;
     height: 294px;
   }
   &__box-overlay {
     position: absolute;
-    width: 370px;
+    width: 450px;
     height: 294px;
     background-color: $boxOverlayBgc;
     left: 0;
@@ -41,10 +42,10 @@
     line-height: 1.56;
     letter-spacing: 00.03em;
     color: $textOverlayColor;
-    margin: 49px 45px 49px 24px;
+    margin: 77px 24px 77px 24px;
   }
   &__text-item {
-    width: 370px;
+    width: 450px;
     border: 1px solid $portfolioFilterBorder;
     padding: 20px 0 20px 24px;
     background-color: #ffffff;
@@ -68,4 +69,60 @@
 
 .portfolio:hover .portfolio__box-overlay {
   transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .filter-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__item {
+      flex-basis: calc((100% - 1 * 30px) / 2);
+    }
+  }
+  .portfolio {
+    width: 354px;
+
+    &__image {
+      width: 354px;
+    }
+    &__box-overlay {
+      width: 354px;
+    }
+    &__text-overlay {
+      margin: 49px 24px 49px 24px;
+    }
+    &__text-item {
+      width: 354px;
+      border: 1px solid $portfolioFilterBorder;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-content {
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    padding-bottom: 94px;
+    &__item {
+      flex-basis: calc((100% - 2 * 30px) / 3);
+    }
+  }
+  .portfolio {
+    width: 370px;
+
+    &__image {
+      width: 370px;
+    }
+    &__box-overlay {
+      width: 370px;
+    }
+    &__text-overlay {
+      margin: 49px 45px 49px 24px;
+    }
+    &__text-item {
+      width: 370px;
+    }
+  }
 }

@@ -1,47 +1,123 @@
 .contact {
-  display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: 345px;
+  display: none;
+
   &__item {
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:not(:last-child) {
-      margin-right: 50px;
-    }
-    &:hover,
-    &:focus {
-      .contact__icon {
-        fill: $activeColor;
-      }
-    }
+    display: none;
   }
   &__link {
-    color: $contactColor;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      color: $activeColor;
-    }
+    display: none;
   }
   &__icon-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
   }
   &__icon {
-    margin-right: 10px;
-    fill: $contactColor;
+    display: none;
   }
-  &__icon--envelope {
-    width: 16px;
-    height: 12px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contact {
+    display: block;
+
+    margin-top: 21px;
+    margin-bottom: 21px;
+    margin-left: 101px;
+    &__item {
+      display: inline-block;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        .contact__icon {
+          fill: $activeColor;
+        }
+      }
+    }
+    &__link {
+      display: inline-block;
+      color: $contactColor;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: $activeColor;
+      }
+    }
+    &__icon-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__icon {
+      display: inline-block;
+      margin-right: 8px;
+      fill: $contactColor;
+    }
+    &__icon--envelope {
+      width: 14px;
+      height: 10px;
+    }
+    &__icon--smartphone {
+      width: 10px;
+      height: 14px;
+    }
   }
-  &__icon--smartphone {
-    width: 10px;
-    height: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 345px;
+    &__item {
+      display: inline-block;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+      &:hover,
+      &:focus {
+        .contact__icon {
+          fill: $activeColor;
+        }
+      }
+    }
+    &__link {
+      display: inline-block;
+      color: $contactColor;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: $activeColor;
+      }
+      &:nth-child(1) {
+        margin-bottom: 10px;
+      }
+    }
+    &__icon-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__icon {
+      display: inline-block;
+      margin-right: 10px;
+      fill: $contactColor;
+    }
+    &__icon--envelope {
+      width: 16px;
+      height: 12px;
+    }
+    &__icon--smartphone {
+      width: 10px;
+      height: 16px;
+    }
   }
 }
