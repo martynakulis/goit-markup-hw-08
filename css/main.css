@@ -1460,8 +1460,8 @@ img {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding-left: 40px;
   background-color: #fff;
   transform: scale(0);
@@ -1470,6 +1470,13 @@ img {
   pointer-events: none;
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1000;
+}
+
+.is-open {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .mobile-open-button {
@@ -1515,12 +1522,6 @@ img {
   margin-left: 10.66px;
 }
 
-.is-open {
-  transform: scale(1);
-  opacity: 1;
-  visibility: visible;
-}
-
 .mobile-navigation {
   margin-top: 48px;
 }
@@ -1533,6 +1534,7 @@ img {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #212121;
 }
 .mobile-navigation__link:hover, .mobile-navigation__link:focus {
   color: #2196f3;
@@ -1546,11 +1548,11 @@ img {
 }
 
 .mobile-contact {
-  margin-top: 302px;
+  padding-top: 302px;
 }
 .mobile-contact__link--phone {
   display: inline-block;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
@@ -1562,7 +1564,7 @@ img {
 }
 .mobile-contact__link--mail {
   display: inline-block;
-  margin-bottom: 64px;
+  padding-bottom: 64px;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
