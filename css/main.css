@@ -49,7 +49,7 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 738px;
     margin: 0 auto;
@@ -90,7 +90,7 @@ img {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .web-heading__logo {
     margin-top: 26px;
     margin-bottom: 26px;
@@ -125,7 +125,7 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .navigation {
     display: flex;
     margin-left: 83px;
@@ -197,7 +197,7 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact {
     display: block;
     margin-top: 21px;
@@ -301,7 +301,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact__link {
     font-size: 12px;
     line-height: 1.16;
@@ -394,7 +394,7 @@ img {
   padding: 10px 41px 10px 41px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .heading {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/backgroung-image.jpg");
     max-width: 768px;
@@ -418,6 +418,36 @@ img {
   .heading__button {
     margin: 0 auto;
     display: block;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .heading {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/responsive/background/header-img-mobile.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .heading {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/responsive/background/header-img-mobile@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .heading {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/responsive/background/header-img-tablet.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .heading {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/responsive/background/header-img-tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heading {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/responsive/background/header-img-desktop.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .heading {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/responsive/background/header-img-desktop@2x.jpg");
   }
 }
 .backdrop {
@@ -700,7 +730,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .main-content {
     display: flex;
     flex-wrap: wrap;
@@ -871,7 +901,7 @@ img {
   color: #757575;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__content {
     flex-direction: row;
     flex-wrap: wrap;
@@ -936,7 +966,7 @@ img {
   fill: #afb1b8;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .social-links {
     padding-left: 74px;
     padding-right: 74px;
@@ -983,7 +1013,7 @@ img {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__list {
     flex-basis: calc((100% - 60px) / 3);
     width: 226px;
@@ -1008,7 +1038,7 @@ img {
   padding: 60px 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     min-height: 463px;
   }
@@ -1047,7 +1077,7 @@ img {
   padding-bottom: 8px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-bottom {
     position: absolute;
     left: 61px;
@@ -1111,7 +1141,7 @@ img {
   fill: #fff;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-icons {
     position: absolute;
     right: 74px;
@@ -1181,7 +1211,7 @@ img {
   margin-left: 24px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .newsletter {
     padding-top: 0px;
     position: absolute;
@@ -1259,7 +1289,7 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .filters {
     justify-content: center;
     flex-wrap: nowrap;
@@ -1376,7 +1406,7 @@ img {
   transform: translateY(0);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .filter-content {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1465,6 +1495,7 @@ img {
 
 .mobile-close-button {
   background-color: #fff;
+  display: block;
   border: none;
   width: 40px;
   height: 40px;
@@ -1496,6 +1527,7 @@ img {
   z-index: 1000;
 }
 .mobile-navigation__link {
+  display: block;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
@@ -1520,6 +1552,7 @@ img {
   z-index: 1000;
 }
 .mobile-contact__link--phone {
+  display: block;
   margin-bottom: 32px;
   font-weight: 500;
   font-size: 34px;
@@ -1531,6 +1564,7 @@ img {
   color: none;
 }
 .mobile-contact__link--mail {
+  display: block;
   margin-bottom: 64px;
   font-weight: 500;
   font-size: 24px;
@@ -1541,9 +1575,10 @@ img {
 
 .mobile-socials {
   z-index: 1001;
+  display: flex;
 }
 .mobile-socials__link {
-  display: flex;
+  display: block;
   gap: 20px;
   font-weight: 500;
   font-size: 18px;
@@ -1563,7 +1598,7 @@ img {
   padding-left: 10px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .mobile-open-button {
     display: none;
   }

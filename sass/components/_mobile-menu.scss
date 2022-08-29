@@ -39,6 +39,7 @@
 }
 .mobile-close-button {
   background-color: $mobileMenuBgc;
+  display: block;
   border: none;
   width: 40px;
   height: 40px;
@@ -69,6 +70,7 @@
   margin-top: 48px;
   z-index: 1000;
   &__link {
+    display: block;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
@@ -93,6 +95,7 @@
   margin-top: 302px;
   z-index: 1000;
   &__link--phone {
+    display: block;
     margin-bottom: 32px;
     font-weight: 500;
     font-size: 34px;
@@ -104,6 +107,7 @@
     }
   }
   &__link--mail {
+    display: block;
     margin-bottom: 64px;
     font-weight: 500;
     font-size: 24px;
@@ -114,8 +118,9 @@
 }
 .mobile-socials {
   z-index: 1001;
+  display: flex;
   &__link {
-    display: flex;
+    display: block;
     gap: 20px;
     font-weight: 500;
     font-size: 18px;
@@ -135,7 +140,7 @@
     }
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .mobile-open-button {
     display: none;
     &__icon {
