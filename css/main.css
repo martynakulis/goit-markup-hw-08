@@ -1461,23 +1461,19 @@ img {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   padding-left: 40px;
+  padding-bottom: 48px;
+  padding-top: 48px;
   background-color: #fff;
-  transform: scale(0);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(100%);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1000;
 }
 
 .is-open {
-  transform: scale(1);
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+  transform: translateX(0);
 }
 
 .mobile-open-button {
@@ -1523,11 +1519,8 @@ img {
   margin-left: 10.66px;
 }
 
-.mobile-navigation {
-  margin-top: 48px;
-}
 .mobile-navigation__link {
-  display: inline-block;
+  display: block;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
@@ -1552,7 +1545,7 @@ img {
   padding-top: 302px;
 }
 .mobile-contact__link--phone {
-  display: inline-block;
+  display: block;
   padding-bottom: 32px;
   font-weight: 500;
   font-size: 34px;
@@ -1564,7 +1557,7 @@ img {
   color: none;
 }
 .mobile-contact__link--mail {
-  display: inline-block;
+  display: block;
   padding-bottom: 64px;
   font-weight: 500;
   font-size: 24px;
@@ -1575,26 +1568,26 @@ img {
 
 .mobile-socials {
   display: flex;
-  gap: 20px;
+}
+.mobile-socials__item:nth-child(1) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobile-socials__item:nth-child(2), .mobile-socials__item:nth-child(3) {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobile-socials__item:last-child {
+  padding-left: 10px;
 }
 .mobile-socials__link {
-  display: inline-block;
+  display: block;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
-}
-.mobile-socials__link:visited {
-  color: none;
-}
-.mobile-socials__link:not(:last-child) {
-  padding-right: 10px;
-  padding-left: 10px;
-  border-right: 1px solid #212121;
-}
-.mobile-socials__link:last-child {
-  padding-left: 10px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
