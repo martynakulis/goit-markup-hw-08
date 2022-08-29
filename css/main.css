@@ -1503,7 +1503,6 @@ img {
   top: 10px;
   right: 15px;
   cursor: pointer;
-  z-index: 1001;
 }
 .mobile-close-button:hover .mobile-close-button__icon {
   fill: #2196f3;
@@ -1524,10 +1523,9 @@ img {
 
 .mobile-navigation {
   margin-top: 48px;
-  z-index: 1000;
 }
 .mobile-navigation__link {
-  display: block;
+  display: inline-block;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
@@ -1549,10 +1547,9 @@ img {
 
 .mobile-contact {
   margin-top: 302px;
-  z-index: 1000;
 }
 .mobile-contact__link--phone {
-  display: block;
+  display: inline-block;
   margin-bottom: 32px;
   font-weight: 500;
   font-size: 34px;
@@ -1564,7 +1561,7 @@ img {
   color: none;
 }
 .mobile-contact__link--mail {
-  display: block;
+  display: inline-block;
   margin-bottom: 64px;
   font-weight: 500;
   font-size: 24px;
@@ -1574,12 +1571,11 @@ img {
 }
 
 .mobile-socials {
-  z-index: 1001;
   display: flex;
+  gap: 20px;
 }
 .mobile-socials__link {
-  display: block;
-  gap: 20px;
+  display: inline-block;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;

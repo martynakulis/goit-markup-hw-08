@@ -47,7 +47,7 @@
   top: 10px;
   right: 15px;
   cursor: pointer;
-  z-index: 1001;
+
   &:hover {
     .mobile-close-button__icon {
       fill: $activeColor;
@@ -68,9 +68,9 @@
 }
 .mobile-navigation {
   margin-top: 48px;
-  z-index: 1000;
+
   &__link {
-    display: block;
+    display: inline-block;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
@@ -93,9 +93,9 @@
 }
 .mobile-contact {
   margin-top: 302px;
-  z-index: 1000;
+
   &__link--phone {
-    display: block;
+    display: inline-block;
     margin-bottom: 32px;
     font-weight: 500;
     font-size: 34px;
@@ -107,7 +107,7 @@
     }
   }
   &__link--mail {
-    display: block;
+    display: inline-block;
     margin-bottom: 64px;
     font-weight: 500;
     font-size: 24px;
@@ -117,11 +117,11 @@
   }
 }
 .mobile-socials {
-  z-index: 1001;
   display: flex;
+  gap: 20px;
   &__link {
-    display: block;
-    gap: 20px;
+    display: inline-block;
+
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
