@@ -16,15 +16,23 @@
     />
   </head>
   <body>
-     <header class="web-heading">
+    <header class="web-heading">
       <div class="web-heading__line">
         <div class="container">
-          <a href="/" class="web-heading__logo logo link"><span class="logo__web-color">Web</span>Studio</a>
+          <a href="/" class="web-heading__logo logo link"
+            ><span class="logo__web-color">Web</span>Studio</a
+          >
           <nav>
             <ul class="navigation style">
-              <li class="navigation__item"><a href="index.html" class="navigation__link link">Agencja</a></li>
-              <li class="navigation__item"><a href="portfolio.html" class="navigation__link link portfolio-page">Portfolio</a></li>
-              <li class="navigation__item"><a href="/" class="navigation__link link">Kontakt</a></li>
+              <li class="navigation__item">
+                <a href="index.html" class="navigation__link link">Agencja</a>
+              </li>
+              <li class="navigation__item">
+                <a href="portfolio.html" class="navigation__link link portfolio-page">Portfolio</a>
+              </li>
+              <li class="navigation__item">
+                <a href="/" class="navigation__link link">Kontakt</a>
+              </li>
             </ul>
           </nav>
           <ul class="contact style">
@@ -49,35 +57,65 @@
               </a>
             </li>
           </ul>
-           <button type="button" class="js-open-menu mobile-open-button"><svg class="mobile-open-button__icon"><use href="/mobile-icons.svg#icon-menu_24px"></use></svg></button>
-          </div>
+          <button type="button" class="js-open-menu mobile-open-button">
+            <svg
+              class="mobile-open-button__icon"
+              viewBox="0 0 24 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
       <!--
         MENU MOBILE
       -->
       <div class="js-menu-container">
         <div class="aria-expanded">
-          <button type="button" class="js-close-menu mobile-close-button"><svg class="mobile-close-button__icon"><use href="/mobile-icons.svg#icon-close_24px"></svg></button>
+          <button type="button" class="js-close-menu mobile-close-button">
+            <svg
+              class="mobile-close-button__icon"
+              viewBox="0 0 19 19"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
           <nav>
             <ul class="mobile-navigation style">
-              <li class="mobile-navigation__item "><a href="index.html" class="mobile-navigation__link link">Agencja</a></li>
-              <li class="mobile-navigation__item "><a href="portfolio.html" class="mobile-navigation__link mobile-navigation__link--second link">Portfolio</a></li>
-              <li class="mobile-navigation__item "><a href="/" class="mobile-navigation__link link">Kontakt</a></li>
+              <li class="mobile-navigation__item">
+                <a href="index.html" class="mobile-navigation__link link">Agencja</a>
+              </li>
+              <li class="mobile-navigation__item">
+                <a
+                  href="portfolio.html"
+                  class="mobile-navigation__link mobile-navigation__link--second link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-navigation__item">
+                <a href="/" class="mobile-navigation__link link">Kontakt</a>
+              </li>
             </ul>
           </nav>
           <ul class="mobile-contact style">
             <li class="mobile-contact__item">
               <a href="/" class="mobile-contact__link mobile-contact__link--phone link">
-                
-                  +48 111 111 111
-               
+                +48 111 111 111
               </a>
             </li>
             <li class="mobile-contact__item">
               <a href="/" class="mobile-contact__link mobile-contact__link--mail link">
-                
-                  info@devstudio.com
-                
+                info@devstudio.com
               </a>
             </li>
           </ul>
@@ -87,10 +125,10 @@
             <li><a href="/" class="link mobile-socials__link"></a>Facebook</li>
             <li><a href="/" class="link mobile-socials__link"></a>LinkedIn</li>
           </ul>
-          </div>
-          </div>
+        </div>
+      </div>
     </header>
- 
+
     <main>
       <div class="container">
         <ul class="style filters">
@@ -116,22 +154,34 @@
           <li class="filter-content__item">
             <figure class="portfolio">
               <picture>
-                  <source srcset="responsive/portfolio/portfolio1-mobile.jpg 1x,
-                                   responsive/portfolio/portfolio1-mobile@2.jpg 2x"
-                          media="(max-width: 767px)">
-                  <source srcset="responsive/portfolio/portfolio1-tablet.jpg 1x,
-                                   responsive/portfolio/portfolio1-tablet@2.jpg 2x"
-                          media="(min-width: 768px) and (max-width: 1199px)">
-                  <source srcset="responsive/portfolio/portfolio1-desktop.jpg 1x,
-                                   responsive/portfolio/portfolio1-desktop@2.jpg 2x"
-                          media="(min-width: 1200px)">
-                  <img
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio1-mobile.jpg   1x,
+                    responsive/portfolio/portfolio1-mobile@2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio1-tablet.jpg   1x,
+                    responsive/portfolio/portfolio1-tablet@2.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio1-desktop.jpg   1x,
+                    responsive/portfolio/portfolio1-desktop@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
                   src="images.portfolio/img1.jpg"
                   alt="Poglądowa strona internetowa"
                   class="portfolio__image"
-                 />
+                />
               </picture>
-                <div class="portfolio__box-overlay">
+              <div class="portfolio__box-overlay">
                 <p class="portfolio__text-overlay">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                   koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -147,22 +197,34 @@
           <li class="filter-content__item">
             <figure class="portfolio">
               <picture>
-                  <source srcset="responsive/portfolio/portfolio2-mobile.jpg 1x,
-                                  responsive/portfolio/portfolio2-mobile@2.jpg 2x"
-                          media="(max-width: 767px)">
-                  <source srcset="responsive/portfolio/portfolio2-tablet.jpg 1x,
-                                  responsive/portfolio/portfolio2-tablet@2.jpg 2x"
-                          media="(min-width: 768px) and (max-width: 1199px)">
-                  <source srcset="responsive/portfolio/portfolio2-desktop.jpg 1x,
-                                  responsive/portfolio/portfolio2-desktop@2.jpg 2x"
-                          media="(min-width: 1200px)">
-                  <img
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio2-mobile.jpg   1x,
+                    responsive/portfolio/portfolio2-mobile@2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio2-tablet.jpg   1x,
+                    responsive/portfolio/portfolio2-tablet@2.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio2-desktop.jpg   1x,
+                    responsive/portfolio/portfolio2-desktop@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
                   src="images.portfolio/img2.jpg"
                   alt="Piłkarze podczas gry"
                   class="portfolio__image"
-                 />
-                </picture>
-                <div class="portfolio__box-overlay">
+                />
+              </picture>
+              <div class="portfolio__box-overlay">
                 <p class="portfolio__text-overlay">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                   koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -178,21 +240,33 @@
           <li class="filter-content__item">
             <figure class="portfolio">
               <picture>
-                  <source srcset="responsive/portfolio/portfolio3-mobile.jpg 1x,
-                                  responsive/portfolio/portfolio3-mobile@2.jpg 2x"
-                          media="(max-width: 767px)">
-                  <source srcset="responsive/portfolio/portfolio3-tablet.jpg 1x,
-                                  responsive/portfolio/portfolio3-tablet@2.jpg 2x"
-                          media="(min-width: 768px) and (max-width: 1199px)">
-                  <source srcset="responsive/portfolio/portfolio3-desktop.jpg 1x,
-                                  responsive/portfolio/portfolio3-desktop@2.jpg 2x"
-                          media="(min-width: 1200px)">
-                  <img
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio3-mobile.jpg   1x,
+                    responsive/portfolio/portfolio3-mobile@2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio3-tablet.jpg   1x,
+                    responsive/portfolio/portfolio3-tablet@2.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio3-desktop.jpg   1x,
+                    responsive/portfolio/portfolio3-desktop@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
                   src="images.portfolio/img3.jpg"
                   alt="Logo restauracji"
                   class="portfolio__image"
-                 />
-                </picture>
+                />
+              </picture>
               <div class="portfolio__box-overlay">
                 <p class="portfolio__text-overlay">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -209,21 +283,33 @@
           <li class="filter-content__item">
             <figure class="portfolio">
               <picture>
-                  <source srcset="responsive/portfolio/portfolio4-mobile.jpg 1x,
-                                  responsive/portfolio/portfolio4-mobile@2.jpg 2x"
-                          media="(max-width: 767px)">
-                  <source srcset="responsive/portfolio/portfolio4-tablet.jpg 1x,
-                                  responsive/portfolio/portfolio4-tablet@2.jpg 2x"
-                          media="(min-width: 768px) and (max-width: 1199px)">
-                  <source srcset="responsive/portfolio/portfolio4-desktop.jpg 1x,
-                                  responsive/portfolio/portfolio4-desktop@2.jpg 2x"
-                          media="(min-width: 1200px)">
-                  <img
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio4-mobile.jpg   1x,
+                    responsive/portfolio/portfolio4-mobile@2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio4-tablet.jpg   1x,
+                    responsive/portfolio/portfolio4-tablet@2.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio4-desktop.jpg   1x,
+                    responsive/portfolio/portfolio4-desktop@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
                   src="images.portfolio/img4.jpg"
                   alt="Słuchawki na białym tle"
                   class="portfolio__image"
-                 />
-                </picture>
+                />
+              </picture>
               <div class="portfolio__box-overlay">
                 <p class="portfolio__text-overlay">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -240,21 +326,33 @@
           <li class="filter-content__item">
             <figure class="portfolio">
               <picture>
-                  <source srcset="responsive/portfolio/portfolio5-mobile.jpg 1x,
-                                  responsive/portfolio/portfolio5-mobile@2.jpg 2x"
-                          media="(max-width: 767px)">
-                  <source srcset="responsive/portfolio/portfolio5-tablet.jpg 1x,
-                                  responsive/portfolio/portfolio5-tablet@2.jpg 2x"
-                          media="(min-width: 768px) and (max-width: 1199px)">
-                  <source srcset="responsive/portfolio/portfolio5-desktop.jpg 1x,
-                                  responsive/portfolio/portfolio5-desktop@2.jpg 2x"
-                          media="(min-width: 1200px)">
-                  <img
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio5-mobile.jpg   1x,
+                    responsive/portfolio/portfolio5-mobile@2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio5-tablet.jpg   1x,
+                    responsive/portfolio/portfolio5-tablet@2.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio5-desktop.jpg   1x,
+                    responsive/portfolio/portfolio5-desktop@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
                   src="images.portfolio/img5.jpg"
                   alt="Pudełka na białym tle"
                   class="portfolio__image"
-                 />
-                </picture>
+                />
+              </picture>
               <div class="portfolio__box-overlay">
                 <p class="portfolio__text-overlay">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -271,21 +369,33 @@
           <li class="filter-content__item">
             <figure class="portfolio">
               <picture>
-                  <source srcset="responsive/portfolio/portfolio6-mobile.jpg 1x,
-                                  responsive/portfolio/portfolio6-mobile@2.jpg 2x"
-                          media="(max-width: 767px)">
-                  <source srcset="responsive/portfolio/portfolio6-tablet.jpg 1x,
-                                  responsive/portfolio/portfolio6-tablet@2.jpg 2x"
-                          media="(min-width: 768px) and (max-width: 1199px)">
-                  <source srcset="responsive/portfolio/portfolio6-desktop.jpg 1x,
-                                  responsive/portfolio/portfolio6-desktop@2.jpg 2x"
-                          media="(min-width: 1200px)">
-                  <img
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio6-mobile.jpg   1x,
+                    responsive/portfolio/portfolio6-mobile@2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio6-tablet.jpg   1x,
+                    responsive/portfolio/portfolio6-tablet@2.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio6-desktop.jpg   1x,
+                    responsive/portfolio/portfolio6-desktop@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
                   src="images.portfolio/img6.jpg"
                   alt="Poglądowa strona internetowa"
                   class="portfolio__image"
-                 />
-                </picture>
+                />
+              </picture>
               <div class="portfolio__box-overlay">
                 <p class="portfolio__text-overlay">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -302,21 +412,33 @@
           <li class="filter-content__item">
             <figure class="portfolio">
               <picture>
-                  <source srcset="responsive/portfolio/portfolio7-mobile.jpg 1x,
-                                  responsive/portfolio/portfolio7-mobile@2.jpg 2x"
-                          media="(max-width: 767px)">
-                  <source srcset="responsive/portfolio/portfolio7-tablet.jpg 1x,
-                                  responsive/portfolio/portfolio7-tablet@2.jpg 2x"
-                          media="(min-width: 768px) and (max-width: 1199px)">
-                  <source srcset="responsive/portfolio/portfolio7-desktop.jpg 1x,
-                                  responsive/portfolio/portfolio7-desktop@2.jpg 2x"
-                          media="(min-width: 1200px)">
-                  <img
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio7-mobile.jpg   1x,
+                    responsive/portfolio/portfolio7-mobile@2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio7-tablet.jpg   1x,
+                    responsive/portfolio/portfolio7-tablet@2.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio7-desktop.jpg   1x,
+                    responsive/portfolio/portfolio7-desktop@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
                   src="images.portfolio/img7.jpg"
                   alt="Czasopismo na białym tle"
                   class="portfolio__image"
-                 />
-                </picture>
+                />
+              </picture>
               <div class="portfolio__box-overlay">
                 <p class="portfolio__text-overlay">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -333,21 +455,33 @@
           <li class="filter-content__item">
             <figure class="portfolio">
               <picture>
-                  <source srcset="responsive/portfolio/portfolio8-mobile.jpg 1x,
-                                  responsive/portfolio/portfolio8-mobile@2.jpg 2x"
-                          media="(max-width: 767px)">
-                  <source srcset="responsive/portfolio/portfolio8-tablet.jpg 1x,
-                                  responsive/portfolio/portfolio8-tablet@2.jpg 2x"
-                          media="(min-width: 768px) and (max-width: 1199px)">
-                  <source srcset="responsive/portfolio/portfolio8-desktop.jpg 1x,
-                                  responsive/portfolio/portfolio8-desktop@2.jpg 2x"
-                          media="(min-width: 1200px)">
-                  <img
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio8-mobile.jpg   1x,
+                    responsive/portfolio/portfolio8-mobile@2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio8-tablet.jpg   1x,
+                    responsive/portfolio/portfolio8-tablet@2.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio8-desktop.jpg   1x,
+                    responsive/portfolio/portfolio8-desktop@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
                   src="images.portfolio/img8.jpg"
                   alt="Obrazek poglądowy"
                   class="portfolio__image"
-                 />
-                </picture>
+                />
+              </picture>
               <div class="portfolio__box-overlay">
                 <p class="portfolio__text-overlay">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
@@ -364,21 +498,33 @@
           <li class="filter-content__item">
             <figure class="portfolio">
               <picture>
-                  <source srcset="responsive/portfolio/portfolio9-mobile.jpg 1x,
-                                  responsive/portfolio/portfolio9-mobile@2.jpg 2x"
-                          media="(max-width: 767px)">
-                  <source srcset="responsive/portfolio/portfolio9-tablet.jpg 1x,
-                                  responsive/portfolio/portfolio9-tablet@2.jpg 2x"
-                          media="(min-width: 768px) and (max-width: 1199px)">
-                  <source srcset="responsive/portfolio/portfolio9-desktop.jpg 1x,
-                                  responsive/portfolio/portfolio9-desktop@2.jpg 2x"
-                          media="(min-width: 1200px)">
-                  <img
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio9-mobile.jpg   1x,
+                    responsive/portfolio/portfolio9-mobile@2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio9-tablet.jpg   1x,
+                    responsive/portfolio/portfolio9-tablet@2.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    responsive/portfolio/portfolio9-desktop.jpg   1x,
+                    responsive/portfolio/portfolio9-desktop@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
                   src="images.portfolio/img9.jpg"
                   alt="Zdjęcie laptopa"
                   class="portfolio__image"
-                 />
-                </picture>
+                />
+              </picture>
               <div class="portfolio__box-overlay">
                 <p class="portfolio__text-overlay">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
